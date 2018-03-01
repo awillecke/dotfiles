@@ -37,9 +37,17 @@ URxvt.intensityStyles: false
 
 URxvt*transparent:       false
 
-URxvt.font: xft:Droid Sans Mono for Powerline:pixelsize=10
+URxvt.font: xft:Source Code Pro for Powerline:pixelsize=10
 URxvt.letterSpace: 0
+URxvt.antialias:  true
 
-*antialias:  false
+*antialias:  true
 *autohint:   false
 
+Xft.autohint: 0
+Xft.antialias: 1
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.dpi: 96
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
