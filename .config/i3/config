@@ -172,7 +172,11 @@ exec xrandr --output DisplayPort-2 --mode 1920x1080 --right-of DVI-D-0
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86audiomute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86audioplay exec playerctl play
+bindsym XF86audiopause exec playerctl pause
+bindsym XF86audionext exec playerctl next
+bindsym XF86audioprev exec playerctl previous
 
 exec setxkbmap -layout us -variant altgr-intl -option nodeadkeys
 exec xmodmap -e "clear lock" #disable caps lock switch
